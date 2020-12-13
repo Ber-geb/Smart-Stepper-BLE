@@ -1,0 +1,63 @@
+{
+  "name": "SmartStepperBLE",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "clean:build:android": "rm -rf android/app/build",
+    "prod:android": "npm run clean:build:android  && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/netinfo": "^5.9.7",
+    "@react-native-firebase/app": "^10.0.0",
+    "@react-native-firebase/auth": "^10.0.0",
+    "@react-native-firebase/firestore": "^10.0.0",
+    "@unimodules/core": "^5.5.1",
+    "base-64": "^1.0.0",
+    "expo-linear-gradient": "^8.3.1",
+    "firebase": "^7.15.1",
+    "fusioncharts": "^3.15.3",
+    "jetifier": "^1.6.6",
+    "moment": "^2.29.1",
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-ble-manager": "^7.4.1",
+    "react-native-ble-plx": "^2.0.1",
+    "react-native-chart-kit": "^6.7.0",
+    "react-native-fusioncharts": "^4.1.2",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-highcharts": "^1.0.2",
+    "react-native-highcharts-wrapper": "^0.1.1",
+    "react-native-keyboard-aware-scroll-view": "^0.9.3",
+    "react-native-reanimated": "^1.13.2",
+    "react-native-safe-area-context": "^3.1.9",
+    "react-native-screens": "^2.15.0",
+    "react-native-settings-screen": "^2.2.1",
+    "react-native-svg": "^12.1.0",
+    "react-native-unimodules": "^0.11.0",
+    "react-native-vector-icons": "^7.1.0",
+    "react-native-webview": "^10.10.2",
+    "react-navigation": "^4.4.3",
+    "react-navigation-stack": "^2.10.1",
+    "react-navigation-tabs": "^2.10.1",
+    "victory-native": "^35.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/runtime": "7.12.5",
+    "@react-native-community/eslint-config": "1.1.0",
+    "babel-jest": "25.5.1",
+    "eslint": "6.8.0",
+    "jest": "25.5.4",
+    "metro-react-native-babel-preset": "0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
